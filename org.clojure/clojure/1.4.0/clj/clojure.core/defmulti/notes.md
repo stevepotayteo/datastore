@@ -13,13 +13,13 @@ From [clojure.org/multimethods](http://clojure.org/multimethods):
   associated with the default dispatching value (which defaults to
   :default [if not provided]), and will use that if present. Otherwise
   the call is an error.  The multimethod system exposes this API:
-  [defmulti](../defmulti/) creates new multimethods,
-  [defmethod](../defmethod/) creates and installs a new method of
+  [defmulti](./defmulti/) creates new multimethods,
+  [defmethod](./defmethod/) creates and installs a new method of
   multimethod associated with a dispatch-value,
-  [remove-method](../remove-method/) removes the method associated
-  with a dispatch-value. [remove-all-methods](../remove-all-methods/)
+  [remove-method](./remove-method/) removes the method associated
+  with a dispatch-value. [remove-all-methods](./remove-all-methods/)
   removes all methods associated all
-  dispatch-values. [prefer-method](../prefer-method/) creates an
+  dispatch-values. [prefer-method](./prefer-method/) creates an
   ordering between methods when they would otherwise be ambiguous.
   Derivation is determined by a combination of either Java inheritance
   (for class values), or using Clojure's ad hoc hierarchy system. The
