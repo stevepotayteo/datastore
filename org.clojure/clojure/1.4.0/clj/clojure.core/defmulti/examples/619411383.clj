@@ -1,5 +1,5 @@
-;this example illustrates that the dispatch type
-;does not have to be a symbol, but can be anything (in this case, it's a string)
+;; this example illustrates that the dispatch type does not have to be a
+;; keyword, but can be anything (in this case, it's a string)
 
 (defmulti greeting
   (fn[x] (x "language")))
@@ -21,9 +21,9 @@
 (def  french-map {"id" "2", "language" "French"})
 (def spanish-map {"id" "3", "language" "Spanish"})
 
-=>(greeting english-map)
-"Hello!"
-=>(greeting french-map)
-"Bounjour!"
-=>(greeting spanish-map)
- java.lang.IllegalArgumentException: I don't know the Spanish language
+(greeting english-map)
+;; => "Hello!"
+(greeting french-map)
+;; => "Bounjour!"
+(greeting spanish-map)
+;; => java.lang.IllegalArgumentException: I don't know the Spanish language
