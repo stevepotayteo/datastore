@@ -1,4 +1,4 @@
-(= x y) is true if x and y are both:
+`(= x y)` is true if `x` and `y` are both:
 
 * numbers in the same 'category', and numerically the same, where
   category is one of (integer or ratio), floating point, or
@@ -30,35 +30,3 @@ Exceptions, or possible surprises:
 * 'Not a Number' values Float/NaN and Double/NaN are not equal to any
   value, not even themselves.  This leads to odd behavior if you use
   them as set elements or map keys.
-
-Examples:
-
-    user=> (= 3 3N)   ; same category integer
-    true
-    user=> (= 2 2.0)  ; different categories integer and floating point
-    false
-    user=> (= [0 1 2] '(0 1 2))
-    true
-    user=> (= '(0 1 2) '(0 1 2.0))   ; 2 and 2.0 are not =
-    false
-
-    ;; While this map is similar to the vector in that it maps the
-    ;; same integers 0, 1, and 2 to the same values, maps and vectors
-    ;; are never = to each other.
-    user=> (= ["a" "b" "c"] {0 "a" 1 "b" 2 "c"})
-    false
-
-    user=> (= (with-meta #{1 2 3} {:key1 1}) (with-meta #{1 2 3} {:key1 2}))
-    true                  ; Metadata is ignored when comparing
-
-    user=> (= Double/NaN Double/NaN)  ; this is normal
-    false
-
-    user=> (def s1 #{1.0 2.0 Double/NaN})
-    #'user/s1
-    user=> s1
-    #{2.0 1.0 NaN}
-    user=> (contains? s1 1.0)         ; this is expected
-    true
-    user=> (contains? s1 Double/NaN)  ; this might surprise you
-    false
