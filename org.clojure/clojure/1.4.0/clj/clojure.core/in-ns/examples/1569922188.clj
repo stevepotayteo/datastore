@@ -2,7 +2,7 @@
 
 ;; create the namespace and switch to it
 user=> (in-ns 'first-namespace)
-#&lt;Namespace first-namespace&gt;
+#<Namespace first-namespace>
 
 ;; create a variable and check it
 first-namespace=> (def my-var "some value")
@@ -12,7 +12,7 @@ first-namespace=> my-var
 
 ;; create another namespace and switch to this one
 first-namespace=> (in-ns 'second-namespace)
-#&lt;Namespace second-namespace&gt;
+#<Namespace second-namespace>
 
 ;; use variable from the other namespace here
 second-namespace=> first-namespace/my-var

@@ -4,7 +4,7 @@ user=> (def x (promise))
 
 
 user=> (deliver x 100)
-#&lt;core$promise$reify__5534@4369a50b: 100&gt;
+#<core$promise$reify__5534@4369a50b: 100>
 
 ;; the promise has been delivered, deref x will return immediately
 user=> @x

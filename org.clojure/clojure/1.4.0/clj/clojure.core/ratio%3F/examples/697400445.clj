@@ -1,4 +1,4 @@
-user=&gt; (ratio? 22/7)
+user=> (ratio? 22/7)
 true
-user=&gt; (ratio? 22)
+user=> (ratio? 22)
 false

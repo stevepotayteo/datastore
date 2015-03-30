@@ -10,4 +10,4 @@ java.lang.ClassCastException: java.lang.String cannot be cast to clojure.lang.Sy
 
 ;; This is how you do it
 user=> (create-ns 'my-new-namespace)
-#&lt;Namespace my-new-namespace&gt;
+#<Namespace my-new-namespace>

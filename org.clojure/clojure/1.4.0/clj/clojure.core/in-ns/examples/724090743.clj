@@ -1,7 +1,7 @@
 ;; The "in-ns" function works almost the same as "ns", but does not load clojure.core 
 
 user=> (in-ns 'my-namespace)
-#&lt;Namespace my-namespace&gt;
+#<Namespace my-namespace>
 
 ;; the function clojure.core/inc won't just work
 my-namespace=> (inc 1)

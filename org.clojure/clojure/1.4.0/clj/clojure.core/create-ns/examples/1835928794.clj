@@ -7,8 +7,8 @@ nil
 
 ;; let's create it
 user=> (create-ns 'my-new-namespace)
-#&lt;Namespace my-new-namespace&gt;
+#<Namespace my-new-namespace>
 
 ;; now searching for it again will have a result
 user=> (find-ns 'my-new-namespace)
-#&lt;Namespace my-new-namespace&gt;
+#<Namespace my-new-namespace>

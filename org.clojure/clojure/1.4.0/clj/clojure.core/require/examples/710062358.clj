@@ -2,4 +2,4 @@
 
 user=> (require '(clojure.java io))
 user=> (clojure.java.io/file "filename")
-#&lt;File filename&gt;
+#<File filename>
