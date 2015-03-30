@@ -3,11 +3,11 @@ user=> (def for-later-use (create-ns 'my-namespace))
 #'user/for-later-use
 
 user=> (the-ns for-later-use)
-#&lt;Namespace my-namespace&gt;
+#<Namespace my-namespace>
 
 
 user=> (the-ns 'my-namespace)
-#&lt;Namespace my-namespace&gt;
+#<Namespace my-namespace>
 
 ;; not going to find anything this way because we just asked the repl
 ;; not to perform an evaluate on it and there is not such 

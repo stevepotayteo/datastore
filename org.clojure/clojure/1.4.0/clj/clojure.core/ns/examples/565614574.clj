@@ -1,6 +1,6 @@
 ;; Let's create a namespace and then assign it as the current namespace
 user=> (create-ns 'my-new-namespace)
-#&lt;Namespace my-new-namespace&gt;
+#<Namespace my-new-namespace>
 
 user=> (ns 'my-new-namespace)
 java.lang.ClassCastException: clojure.lang.PersistentList cannot be cast to clojure.lang.Symbol (NO_SOURCE_FILE:26)

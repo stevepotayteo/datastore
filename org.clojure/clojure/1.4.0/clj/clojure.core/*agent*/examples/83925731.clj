@@ -21,7 +21,7 @@ user=> @myagent
 
 ;; Start the fun:
 user=> (send-off myagent inc-while-running)
-#&lt;Agent@5fb9f88b: 20&gt;
+#<Agent@5fb9f88b: 20>;
 
 ;; The agent has already been incremented many times (20 when I ran this)
 ;; by the time the REPL prints.
