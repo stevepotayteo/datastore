@@ -9,4 +9,4 @@ equal, then at most one of them can be an element in a sorted set at
 one time.  See the 'Sorted sets and maps' section of (topic
 Comparators) (TBD) for more discussion.
 
-See also: [sorted-set](./sorted-set), (topic Comparators)
+See also: clj::clojure.core/sorted-set, (topic Comparators)

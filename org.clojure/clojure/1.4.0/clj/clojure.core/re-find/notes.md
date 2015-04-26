@@ -3,12 +3,13 @@ See re-seq if you want a sequence of all matches.
 (re-find matcher) mutates the matcher object.
 
 See also:
-[re-seq](./re-seq),
-[re-matches](./re-matches),
-[re-pattern](./re-pattern),
-[clojure.string/replace](../clojure.string/replace),
-[clojure.string/replace-first](../clojure.string/replace-first),
-[re-matcher](./re-matcher),
-[re-groups](./re-groups)
+
+- clj::clojure.core/re-seq
+- clj::clojure.core/re-matches
+- clj::clojure.core/re-pattern
+- clj::clojure.string/replace
+- clj::clojure.string/replace-first
+- clj::clojure.core/re-matcher
+- clj::clojure.core/re-groups
 
 See docs for function subs, section 'Memory use warning'.

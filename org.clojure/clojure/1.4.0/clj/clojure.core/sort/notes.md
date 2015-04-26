@@ -9,4 +9,7 @@ values in the input collection are considered equal by the comparator,
 they are guaranteed to remain in the same relative order in the output
 as they had in the input.
 
-See also: [sort-by](./sort-by), [compare](./compare), (topic Comparators)
+See also:
+- clj::clojure.core/sort-by
+- clj::clojure.core/compare
+- (topic Comparators)

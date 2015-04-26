@@ -1,5 +1,5 @@
 `hash` returns a 32-bit integer hash value for any object.
-It is similar to Java's hashCode, but it is consistent with Clojure [`=`](./=) (with a few exceptions -- see below).
+It is similar to Java's hashCode, but it is consistent with Clojure clj::clojure.core/= (with a few exceptions -- see below).
 hashCode is consistent with Java's equals method.
 
 When we say a hash function is consistent with =, it means that for any two values x1 and x2 where `(= x1 x2)` is true, `(= (hash x1) (hash x2))` is also true.
@@ -10,4 +10,4 @@ This leads to incorrect behavior if you use them as set elements or map keys (se
 Convert BigIntegers to BigInt using (bigint x), and floats and doubles to a common type with `(float x)` or `(double x)`, to avoid this issue.
 This behavior is by choice: http://dev.clojure.org/jira/browse/CLJ-1036
 
-See also: (topic Equality)  (TBD)
+See also: (topic Equality)

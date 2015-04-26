@@ -1,6 +1,6 @@
 `(= x y)` is true if `x` and `y` are both:
 
-* numbers in the same 'category', and numerically the same, where category is one of (integer or ratio), floating point, or BigDecimal.  Use [`==`](./==) if you want to compare for numerical equality between different categories, or you want an exception thrown if either value is not a number.
+* numbers in the same 'category', and numerically the same, where category is one of (integer or ratio), floating point, or BigDecimal.  Use clj::clojure.core/== if you want to compare for numerical equality between different categories, or you want an exception thrown if either value is not a number.
 * sequences, lists, vectors, or queues, with equal elements in the same order.
 * sets, with equal elements, ignoring order.
 * maps, with equal key/value pairs, ignoring order.

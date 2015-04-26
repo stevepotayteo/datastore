@@ -18,12 +18,13 @@ Differences include:
 * There is no transient version of sorted maps.
 
 See also:
-[sorted-map-by](./sorted-map-by),
-[compare](./compare),
-[hash-map](./hash-map),
-[assoc](./assoc),
-[dissoc](./dissoc),
-[keys](./keys),
-[vals](./vals),
-[subseq](./subseq),
-[rsubseq](./rsubseq),
+
+- clj::clojure.core/sorted-map-by
+- clj::clojure.core/compare
+- clj::clojure.core/hash-map
+- clj::clojure.core/assoc
+- clj::clojure.core/dissoc
+- clj::clojure.core/keys
+- clj::clojure.core/vals
+- clj::clojure.core/subseq
+- clj::clojure.core/rsubseq

@@ -8,4 +8,7 @@ or a set contains an element.  It can be easier to use correctly than
 'get', especially if you wish to allow a key, value, or set element to
 be nil.
 
-See also: [some](./some), [get](./get)
+See also:
+
+- clj::clojure.core/some
+- clj::clojure.core/get
