@@ -2,21 +2,21 @@
 ;; keyword, but can be anything (in this case, it's a string)
 
 (defmulti greeting
-  (fn[x] (x "language")))
+  (fn [x] (x "language")))
 
-;params is not used, so we could have used [_]
+;; params is not used, so we could have used [_]
 (defmethod greeting "English" [params]
  "Hello!")
 
 (defmethod greeting "French" [params]
  "Bonjour!")
 
-;;default handling
+;; default handling
 (defmethod greeting :default [params]
  (throw (IllegalArgumentException. 
           (str "I don't know the " (params "language") " language"))))
 
-;then can use this like this:
+;; then can use this like this:
 (def english-map {"id" "1", "language" "English"})
 (def  french-map {"id" "2", "language" "French"})
 (def spanish-map {"id" "3", "language" "Spanish"})
